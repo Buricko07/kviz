@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava - Quiz BiH</title>
+    <link rel="stylesheet" href="/login/login.css">
+</head>
+
+<body>
+    <div class="left">
+        <img src="/slike/img1.png" alt="Obrazovanje" class="background-image">
+        <div class="overlay"></div>
+        <div class="quote">
+            <p>Najbolji način da naučiš nešto novo jeste da se zab aviš radeći to.</p>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Quiz <span class="highlight">BiH</span></h2>
+        <h3>Prijavite se na vaš račun</h3>
+        <p class="info-text">Unesite informacije za prijavu</p>
+        <button class="google-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <path fill="#4285F4"
+                    d="M24 9.5c3.9 0 7.1 1.3 9.8 3.9l7.3-7.3C36.9 2 30.9 0 24 0 14.7 0 6.6 5.5 2.3 13.6l8.6 6.6C13.2 13.6 18.1 9.5 24 9.5z" />
+                <path fill="#34A853"
+                    d="M46.1 24.5c0-1.5-.1-2.9-.3-4.3H24v8.2h12.8c-.6 3.3-2.5 6.1-5.4 8l8.3 6.4c4.8-4.4 7.4-10.8 7.4-18.3z" />
+                <path fill="#FBBC05" d="M10.9 28.5c-1-3-1-6.3 0-9.3l-8.6-6.6c-3.6 7.3-3.6 15.9 0 23.2l8.6-6.6z" />
+                <path fill="#EA4335"
+                    d="M24 48c6.5 0 12-2.1 16.1-5.7l-8.3-6.4c-2.3 1.5-5.1 2.3-7.9 2.3-5.9 0-10.8-4.1-12.6-9.5l-8.6 6.6C6.6 42.5 14.7 48 24 48z" />
+            </svg>
+            Prijavi se putem Google računa
+        </button>
+        <div class="divider">ili</div>
+        <form>
+            <input id="email" type="email" placeholder="E-mail adresa" required>
+            <div class="password-container">
+                <input id="password" type="password" placeholder="Lozinka" required>
+                <svg class="password-toggle" id="togglePassword" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg>
+                <div class="forgot">
+                    <p style="color: #8b8b8b; width: 50%;">Zaboravili ste lozinku?</p>
+                    <a href="#">Restartuj lozinku.</a>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Prijavi se</button>
+            <p class="register" style="color: #8b8b8b;"> Nemate račun ? <a href="register.html" style="text-decoration: none; margin-left: 10px;"> Registruj se. </a> </p>
+        </form>
+    </div>
+
+    <script src="/login/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    width: 904px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    margin-right: 90px;
+}
+
+.left img {
+    width: 904px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.quote {
+    position: relative;
+    color: white;
+    font-size: 1.7em;
+    max-width: 60%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2rem;
+
+}
+
+
+.right h2,
+.right h3,
+.right p {
+    width: 100%;
+    text-align: left;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #0056b3;
+}
+
+.subtext {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#button {
+    background: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#email,
+#password,
+#username,
+#repeat-password {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}

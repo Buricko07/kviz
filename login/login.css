@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    width: 904px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; 
+    padding: 40px;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.quote {
+    position: relative;
+    color: white;
+    font-size: 1.7em;
+    max-width: 60%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 2rem;
+}
+
+.right h2,
+.right h3,
+.right p {
+    width: 100%;
+    text-align: left;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #0056b3;
+}
+
+.google-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.google-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    margin: 20px 0;
+    color: #888;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 3px;
+    top: 15%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: right;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+.login-btn {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.register {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+#email,
+#password {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-text {
+    color: #8b8b8b;
+}
