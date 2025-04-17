@@ -159,3 +159,125 @@ p {
     font-size: 14px;
     color: #666;
 }
+
+.home3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 150vh;
+    padding: 10vh;
+
+
+}
+
+.leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.leaderboard-card {
+    background-color: #1D4ED8;
+    color: white;
+    width: 80%;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-left: -150px;
+}
+
+.yuh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yuh h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: slategray;
+}
+
+.quiz-btn {
+    background-color: white;
+    color: #1D4ED8;
+    display: flex;
+    border: none;
+    width: 25%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.quiz-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    height: 70%;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    margin: 5px 0;
+    width: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.last-card {
+    margin-top: 10vh;
+}
+
+.rank {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    background: gray;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.score {
+    font-weight: bold;
+}

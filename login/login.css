@@ -142,7 +142,7 @@ input {
     text-decoration: none;
 }
 
-.login-btn {
+#login-btn {
     background: #0056b3;
     color: white;
     border: none;
